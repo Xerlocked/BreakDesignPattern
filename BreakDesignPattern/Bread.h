@@ -16,7 +16,7 @@ class Soboro : public Bread
 	const string name;
 
 public:
-	Soboro(int price) : m_price(price), name("º“∫∏∑Œ") {}
+	Soboro(int price) : m_price(price), name("ÏÜåÎ≥¥Î°ú") {}
 
 	string BreadName() override
 	{
@@ -35,7 +35,7 @@ class Cream : public Bread
 	const string name;
 
 public:
-	Cream(int price) : m_price(price), name("≈©∏≤") {}
+	Cream(int price) : m_price(price), name("ÌÅ¨Î¶º") {}
 
 	string BreadName() override {
 		return name;

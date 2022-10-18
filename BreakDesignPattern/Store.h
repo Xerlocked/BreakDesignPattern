@@ -25,7 +25,7 @@ public:
 	{
 		for (const auto bread : myBread)
 		{
-			cout << "Á¾·ù: " << bread->BreadName() << " " << "°¡°Ý: " << bread->Price() << endl;
+			cout << "ì¢…ë¥˜: " << bread->BreadName() << "/" << "ê°€ê²©: " << bread->Price() << endl;
 		}
 	}
 };
