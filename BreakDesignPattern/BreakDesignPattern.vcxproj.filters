@@ -22,6 +22,12 @@
     <Filter Include="헤더 파일\Creational\Singleton">
       <UniqueIdentifier>{daf1d179-84e4-49c7-bcfa-05ff97b08380}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Creational\FactoryMethod">
+      <UniqueIdentifier>{229ebfe1-416a-497e-b20b-ced424536aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Creational\AbstractFactory">
+      <UniqueIdentifier>{380cf9c3-0b5b-41f9-8cb7-60f736b4fa32}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BreakDesignPattern.cpp">
@@ -40,6 +46,21 @@
     </ClInclude>
     <ClInclude Include="Airconditioner.h">
       <Filter>헤더 파일\Creational\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>헤더 파일\Creational\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="TerranFactory.h">
+      <Filter>헤더 파일\Creational\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="TerranWeapon.h">
+      <Filter>헤더 파일\Creational\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="TerranDamageType.h">
+      <Filter>헤더 파일\Creational\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="TerranMass.h">
+      <Filter>헤더 파일\Creational\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

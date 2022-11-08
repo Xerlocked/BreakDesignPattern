@@ -6,24 +6,17 @@ class Bread
 {
 public:
 	virtual ~Bread() = default;
-	virtual string BreadName() = 0;
-	virtual int Price() = 0;
+	virtual int GetPrice() = 0;
 };
 
 class Soboro : public Bread
 {
-	int m_price;
-	const string name;
-
+	const int m_price;
 public:
-	Soboro(int price) : m_price(price), name("소보로") {}
+	Soboro() : m_price(1500) {}
+	Soboro(int price) : m_price(price) {}
 
-	string BreadName() override
-	{
-		return name;
-	}
-
-	int Price() override
+	int GetPrice() override
 	{
 		return m_price;
 	}
@@ -31,19 +24,13 @@ public:
 
 class Cream : public Bread
 {
-	int m_price;
-	const string name;
-
+	const int m_price;
 public:
-	Cream(int price) : m_price(price), name("크림") {}
+	Cream() : m_price(2000) {}
+	Cream(int price) : m_price(price) {}
 
-	string BreadName() override {
-		return name;
-	}
-
-	int Price() override
+	int GetPrice() override
 	{
 		return m_price;
 	}
-
 };

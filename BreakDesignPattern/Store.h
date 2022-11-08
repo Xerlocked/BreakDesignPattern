@@ -2,30 +2,21 @@
 
 #include "BreadFactory.h"
 #include "Bread.h"
-#include <iostream>
 #include <vector>
 
 using namespace std;
 
-class Store {
-
-	vector<Bread*> myBread;
-
-public:
-	void OrderBread(const string& s, int price)
+class Store : public BreadFactory {
+private:
+	Bread* CreateBread(BreadType bt) override
 	{
-		Bread* orderBread = BreadFactory::BakeBread(s, price);
-
-		if(orderBread == nullptr) return;
-
-		myBread.push_back(orderBread);
-	}
-
-	void ShowBreadList() const
-	{
-		for (const auto bread : myBread)
-		{
-			cout << "종류: " << bread->BreadName() << "/" << "가격: " << bread->Price() << endl;
+		switch (bt) {
+		case BreadFactory::soboro:
+			return new Soboro();
+		case BreadFactory::cream:
+			return new Cream();
+		default:
+			return nullptr;
 		}
 	}
 };

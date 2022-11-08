@@ -1,20 +1,21 @@
 #pragma once
 #include "Bread.h"
-#include <string>
 
-class BreadFactory {
+class BreadFactory abstract {
+protected:
+	virtual ~BreadFactory() = default;
+
 public:
-	static Bread* BakeBread(string orderBread, int price)
-	{
-		if(orderBread._Equal("Soboro"))
-		{
-			return new Soboro(price);
-		}
-		if(orderBread._Equal("Cream"))
-		{
-			return new Cream(price);
-		}
+	enum BreadType {
+		soboro = 0,
+		cream = 1
+	};
 
-		return nullptr;
+	Bread* Order(BreadType bt)
+	{
+		return CreateBread(bt);
 	}
+
+protected:
+	virtual Bread* CreateBread(BreadType bt) abstract;
 };
