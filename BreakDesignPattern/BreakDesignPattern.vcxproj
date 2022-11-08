@@ -134,12 +134,7 @@
     <ClInclude Include="Airconditioner.h" />
     <ClInclude Include="Bread.h" />
     <ClInclude Include="BreadFactory.h" />
-    <ClInclude Include="Singleton.h" />
     <ClInclude Include="Store.h" />
-    <ClInclude Include="TerranDamageType.h" />
-    <ClInclude Include="TerranFactory.h" />
-    <ClInclude Include="TerranMass.h" />
-    <ClInclude Include="TerranWeapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
